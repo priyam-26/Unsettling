@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="What Was Her Fault? An interactive reflection on the questions women are forced to answer for simply living their lives.">
+<title>Her Fault?</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div class="progress"><span id="progressBar"></span></div>
+<button class="sound" id="soundBtn" aria-label="Toggle ambient sound">sound <span>off</span></button>
+
+<main>
+<section class="opening panel" data-step>
+  <div class="opening-mark">A question before everything else.</div>
+  <h1>What was<br><em>her</em> fault?</h1>
+  <p class="lead">Before you read a case. Before you read a headline. Before you hear what she was wearing, where she was, who she trusted, or what time it was.</p>
+  <button class="begin" id="begin">Ask the question <span>↓</span></button>
+</section>
+
+<section class="threshold panel" data-step>
+  <div class="section-no">01 / THE QUESTION</div>
+  <p class="giant">She was a girl.</p>
+  <p class="whisper">Was that her fault?</p>
+  <div class="threshold-answer-row">
+    <button class="answer threshold-no">No.</button>
+    <button class="answer threshold-yes">Yes.</button>
+  </div>
+  <div class="threshold-response" aria-live="polite"></div>
+</section>
+
+<section class="reasons panel" data-step>
+  <div class="section-no">02 / THINGS SHE DID</div>
+  <p class="intro">Let's try the questions people ask when they want an <span class="unsettling">explanation</span>.</p>
+  <div id="reasonStage" class="reason-stage">
+    <div class="reason-card">
+      <span class="reason-number">01</span>
+      <h2>She was studying.</h2>
+      <p>Was that her fault?</p>
+      <button class="answer next-reason">No.</button>
+    </div>
+  </div>
+</section>
+
+<section class="ordinary panel" data-step>
+  <div class="section-no">03 / AN ORDINARY LIFE</div>
+  <div class="split-life">
+    <div class="life-copy">
+      <p class="small-label">There was a life here.</p>
+      <h2>Not a headline.<br><span>A life.</span></h2>
+      <p>Classes. Messages. Bad days. Good songs. A bag left on a chair. Plans for next month. Someone waiting for her to come home.</p>
+      <p>None of these things are extraordinary.</p>
+      <p class="underline">That is the point.</p>
+    </div>
+    <div class="life-wall" aria-hidden="true">
+      <span>MON</span><span>EXAM</span><span>CALL HOME</span><span>7:10 PM</span><span>BUY NOTEBOOK</span><span>LAUGH</span><span>GO HOME</span><span>NEXT WEEK</span><span>NEXT YEAR</span>
+    </div>
+  </div>
+</section>
+
+<section class="interrupt panel" data-step>
+  <div class="section-no">04 / THE QUESTIONS</div>
+  <div class="questions" id="questions">
+    <p>Why was she there?</p>
+    <p>Why was she alone?</p>
+    <p>Why did she trust someone?</p>
+    <p>Why did she go?</p>
+    <p>Why did she come home late?</p>
+    <p>Why did she...</p>
+  </div>
+  <div class="answer-back">Stop.</div>
+  <p class="reframe">Every question has quietly moved the burden from the person who chose to harm her<br>to the person who was harmed.</p>
+</section>
+
+<section class="fault panel" data-step>
+  <div class="section-no">05 / TURN IT AROUND</div>
+  <div class="turn-grid">
+    <div><span>She was outside.</span><strong>Why shouldn't she be?</strong></div>
+    <div><span>She was travelling.</span><strong>Why shouldn't she?</strong></div>
+    <div><span>She was working.</span><strong>Why shouldn't she?</strong></div>
+    <div><span>She had a dream.</span><strong>Why shouldn't she?</strong></div>
+    <div><span>She trusted someone.</span><strong>Why shouldn't she?</strong></div>
+    <div><span>She existed.</span><strong>Why shouldn't she?</strong></div>
+  </div>
+</section>
+
+<section class="nothing panel" data-step>
+  <div class="section-no">06 / THE BURDEN WAS NEVER HERS</div>
+  <div class="nothing-core">
+    <p class="nothing-kicker">So let us stop asking what she should have done differently.</p>
+    <div class="nothing-word">Nothing.</div>
+    <p>Not the clothes.<br>Not the hour.<br>Not the road.<br>Not the dream.<br>Not the trust.<br>Not the fact that she was there.</p>
+    <p class="quiet">A woman can make a mistake. She can be careless. She can trust the wrong person. She can walk into the wrong place at the wrong time. <strong>None of it gives another human being permission to violate her.</strong></p>
+  </div>
+</section>
+
+<section class="after panel" data-step>
+  <div class="section-no">07 / THE WORLD KEEPS GOING</div>
+  <div class="after-wrap">
+    <div class="after-text">
+      <p class="small-label">The case may continue.</p>
+      <h2>It is not the end of everything that was lost.</h2>
+      <p>The file moves. Hearings happen. Evidence is recorded. Orders are passed. Appeals are filed.</p>
+      <p>Then the court closes its file for the day, the headline moves down the page, and another morning arrives.</p>
+      <p class="after-weight">For some people, time keeps moving.<br>For others, it moves around an absence.</p>
+    </div>
+    <div class="years" id="years"></div>
+  </div>
+</section>
+
+<section class="silence panel" data-step>
+  <div class="section-no">08 / WHAT A NUMBER CANNOT HOLD</div>
+  <p class="measure-intro">A case can count what the law needs to count.</p>
+  <h3 class="measure-title">But these are the things a number cannot carry.</h3>
+  <div class="measure-list">
+    <span>the conversations that never happened</span>
+    <span>the plans that stayed unfinished</span>
+    <span>the version of herself she never got to become</span>
+    <span>the careers never started</span>
+    <span>the songs never sung</span>
+    <span>the friendships never made</span>
+    <span>the silence at a table where someone used to sit</span>
+    <span>the people who still remember her laugh</span>
+  </div>
+  <p class="measure-end">You can count a case. You can count a sentence. You can count the years. <strong>You cannot count a life that never got the chance to finish becoming itself.</strong></p>
+</section>
+
+<section class="final panel" data-step>
+  <div class="final-inner">
+    <p class="small-label">09 / THE NUMBER KEEPS MOVING</p>
+    <h2>In 2024, India recorded<br><em>29,536</em> rape cases.</h2>
+    <p class="keep-coming">Yet the numbers keep coming.</p>
+    <p class="current-stat">That is an average of about <strong>81 reported cases every day.</strong><br>Spread evenly across the year, that is roughly <strong>one reported case every 17 minutes 47 seconds.</strong> <a class="source-link" href="https://data.gov.in/catalog/crime-india-2024" target="_blank" rel="noopener" aria-label="Source: NCRB Crime in India 2024">[source]</a></p>
+    <div class="final-line"></div>
+    <p class="timeline-heading">And since 2010, the headlines have carried names and cases like these — selected, not complete. A year can hold far more than one story.</p>
+    <div class="case-years" id="caseYears"></div>
+    <p class="final-question">These are not the whole story.</p>
+    <p class="final-question">They are only the stories that became impossible for the country to ignore.</p>
+    <div class="last-question">So perhaps the question was never “why didn't she...?”</div>
+    <div class="last-big">Perhaps we should ask<br><em>why did someone think they "could?"</em></div>
+    <p class="end-note">The numbers on this page are reported cases, not a measure of every incident that occurred. The 17-minute figure is a mathematical average, not a literal schedule of crimes. The 2024 figure comes from the NCRB's <a href="https://data.gov.in/catalog/crime-india-2024" target="_blank" rel="noopener">Crime in India 2024</a> release.</p>
+  </div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
